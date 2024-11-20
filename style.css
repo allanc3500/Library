@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+header {
+    background-color: rgb(149, 198, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+header > button{
+    background-color: green;
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: rgb(212, 119, 119);
+    font-size: 21px;
+    cursor: pointer;
+}
+
+header > button:hover {
+    cursor: pointer;
+    width: 220px;
+    height: 62px;
+    font-size: 26px;
+}
+
+dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+dialog > form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*Working on display of dialog box radio buttons 1059*/
+dialog > div {
+
+}
+
+dialog::backdrop {
+    background-color: rgb(201, 199, 199);
+    opacity: 0.8;
+  }
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+main > div {
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(149, 198, 149);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+main > div > * {
+    margin: 5px;
+}
+
+main > div > div {
+    margin: 5px;
+    display: flex;
+}
+
+main > div > * > * {
+    margin-right: 8px;
+    align-self: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+.book-div {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightyellow;
+}
